@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             x:Class="GC.SgnlR.MainPage"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundImageSource="Background">
+
+    <Grid RowDefinitions="auto, *">
+        <Frame Grid.Row="0"
+               BackgroundColor="#052C4E" 
+               HeightRequest="20" 
+               VerticalOptions="Start" 
+               CornerRadius="0" />
+        <Frame Grid.Row="0" 
+               BackgroundColor="#052C4E" 
+               VerticalOptions="StartAndExpand"
+               CornerRadius="20"
+               xct:ShadowEffect.Color="#000000"
+               xct:ShadowEffect.OffsetY="3"
+               xct:ShadowEffect.Radius="6"
+               xct:ShadowEffect.Opacity="0.35">
+            <Label Text="Welcome to Git Commit!"
+                   HeightRequest="150"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center" 
+                   TextColor="White"
+                   FontAttributes="Bold"
+                   FontSize="35"/>
+        </Frame>
+        <Button Grid.Row="1"
+                HeightRequest="80"
+                WidthRequest="308"
+                CornerRadius="16"
+                FontSize="26"
+                FontAttributes="Bold"
+                TextColor="#052C4E"
+                BackgroundColor="#FFFFFF"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Clicked="Button_Clicked"
+                Text="Login with Google"
+                xct:ShadowEffect.OffsetY="3"
+                xct:ShadowEffect.OffsetX="3"
+                xct:ShadowEffect.Color="#000000"
+                xct:ShadowEffect.Opacity="0.39"
+                xct:ShadowEffect.Radius="7"/>
+    </Grid>
+</ContentPage>
