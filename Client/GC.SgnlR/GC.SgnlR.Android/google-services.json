@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "1085728934350",
+    "project_id": "gc-signalr",
+    "storage_bucket": "gc-signalr.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1085728934350:android:e19424522230406f7a039f",
+        "android_client_info": {
+          "package_name": "com.companyname.gc.sgnlr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1085728934350-eftjofe7dq96sviousu6probu26cjtcf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiGrHKszjm2k65ctN6vxYpE4Ryl_IhjVo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1085728934350-eftjofe7dq96sviousu6probu26cjtcf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1085728934350-67r9cbnddoi3jv8qmfriqiei57vb9qtp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "pl.robbiedrink.Przybij5.Demo"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1085728934350:android:99404900d34534e97a039f",
+        "android_client_info": {
+          "package_name": "com.companyname.gc.signalr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1085728934350-eftjofe7dq96sviousu6probu26cjtcf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiGrHKszjm2k65ctN6vxYpE4Ryl_IhjVo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1085728934350-eftjofe7dq96sviousu6probu26cjtcf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1085728934350-67r9cbnddoi3jv8qmfriqiei57vb9qtp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "pl.robbiedrink.Przybij5.Demo"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

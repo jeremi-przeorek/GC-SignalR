@@ -7,24 +7,26 @@ namespace GC.SgnlR
 {
     public partial class MainPage : ContentPage
     {
+        private IGoogleAuth _googleAuth;
+
         public MainPage()
         {
             InitializeComponent();
+
+            _googleAuth = DependencyService.Resolve<IGoogleAuth>();
+            _googleAuth.AuthSuccess += GoogleAuth_AuthSuccess;
+            _googleAuth.AuthFailure += GoogleAuth_AuthFailure;
         }
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            var googleAuth = DependencyService.Resolve<IGoogleAuth>();
-
-            googleAuth.AuthSuccess += GoogleAuth_AuthSuccess;
-            googleAuth.AuthFailure += GoogleAuth_AuthFailure;
-
-            googleAuth.LoginAsync();
+            _googleAuth.LoginAsync();
         }
 
         private void GoogleAuth_AuthFailure(object sender, AuthenticatorCompletedEventArgs e)
         {
             DisplayAlert("Login Failure!", null, "Ok");
+
         }
 
         private async void GoogleAuth_AuthSuccess(object sender, AuthenticatorCompletedEventArgs e)

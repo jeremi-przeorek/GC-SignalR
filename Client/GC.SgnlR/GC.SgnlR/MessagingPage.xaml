@@ -23,19 +23,25 @@
                        x:Name="entry" 
                        HeightRequest="44"
                        VerticalOptions="Center"
-                       BackgroundColor="#FFFFFF" 
-                       TextColor="Black"/>
+                       TextColor="Black">
+                    <Entry.BackgroundColor>
+                        <OnPlatform x:TypeArguments="Color">
+                            <On Platform="iOS" Value="#FFFFFF"/>
+                            <On Platform="Android" Value="Transparent"/>
+                        </OnPlatform>
+                    </Entry.BackgroundColor>
+                </Entry>
                 <Button Grid.Row="2"
                         Clicked="Button_Clicked"
                         VerticalOptions="Center"
                         Text="Send message"
                         TextColor="#FFFFFF"
                         FontSize="16"
+                        Padding="16,0"
                         FontAttributes="Bold"
                         BackgroundColor="#0C3D67" 
                         CornerRadius="15"
                         HeightRequest="47"
-                        WidthRequest="133"
                         HorizontalOptions="Center"
                         xct:ShadowEffect.OffsetY="3"
                         xct:ShadowEffect.Color="#000000"
